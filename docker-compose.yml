@@ -1,0 +1,8 @@
+version: '2'
+services:
+  linkerd:
+    image: linkerdexample
+    ports:
+      - 8080:8080 # for http traffic
+      - 9990:9990 # for linkerd admin
+      - 9411:9411 # for zipkin
